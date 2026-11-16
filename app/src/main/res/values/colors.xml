@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fundo">#FFF5EDE1</color>
+    <color name="cartao">#FFFFFFFF</color>
+    <color name="borda">#FFE2D5C3</color>
+    <color name="primaria">#FF5D4037</color>
+    <color name="texto_principal">#FF3E2723</color>
+    <color name="texto_secundario">#FF7A6A5F</color>
+    <color name="vitoria">#FF2E7D32</color>
+    <color name="derrota">#FFC62828</color>
+    <color name="empate">#FFEF6C00</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

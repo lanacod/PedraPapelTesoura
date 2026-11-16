@@ -1,0 +1,9 @@
+<resources>
+    <style name="Theme.PedraPapelTesoura" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/primaria</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/primaria</item>
+        <item name="android:windowBackground">@color/fundo</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

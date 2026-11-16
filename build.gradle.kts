@@ -1,0 +1,4 @@
+// Arquivo de build de nível superior (configurações comuns a todos os módulos).
+plugins {
+    alias(libs.plugins.android.application) apply false
+}

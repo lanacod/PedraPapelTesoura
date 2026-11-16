@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ícone: Papel (folha com canto dobrado) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:strokeColor="#FF5D4037"
+        android:strokeWidth="1.2"
+        android:strokeLineJoin="round"
+        android:pathData="M5,2.5L14.5,2.5L19.5,7.5L19.5,21.5L5,21.5Z" />
+    <path
+        android:fillColor="#FFE0E0E0"
+        android:strokeColor="#FF5D4037"
+        android:strokeWidth="1.2"
+        android:strokeLineJoin="round"
+        android:pathData="M14.5,2.5L14.5,7.5L19.5,7.5Z" />
+    <path
+        android:strokeColor="#FF64B5F6"
+        android:strokeWidth="1.1"
+        android:strokeLineCap="round"
+        android:pathData="M8,11L16.5,11M8,14L16.5,14M8,17L13.5,17" />
+</vector>

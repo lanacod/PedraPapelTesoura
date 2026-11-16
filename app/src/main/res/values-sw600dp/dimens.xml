@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tablets (largura mínima de 600dp): elementos maiores -->
+    <dimen name="espaco_tela">32dp</dimen>
+    <dimen name="tamanho_titulo">40sp</dimen>
+    <dimen name="tamanho_pontos">48sp</dimen>
+    <dimen name="tamanho_resultado">34sp</dimen>
+    <dimen name="tamanho_botao_jogada">140dp</dimen>
+    <dimen name="tamanho_icone_computador">96dp</dimen>
+    <dimen name="largura_maxima_conteudo">640dp</dimen>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Celulares -->
+    <dimen name="espaco_tela">20dp</dimen>
+    <dimen name="tamanho_titulo">28sp</dimen>
+    <dimen name="tamanho_pontos">36sp</dimen>
+    <dimen name="tamanho_resultado">26sp</dimen>
+    <dimen name="tamanho_botao_jogada">92dp</dimen>
+    <dimen name="tamanho_icone_computador">64dp</dimen>
+    <dimen name="largura_maxima_conteudo">480dp</dimen>
+</resources>

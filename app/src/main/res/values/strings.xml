@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Pedra, Papel e Tesoura</string>
+    <string name="titulo">Pedra, Papel e Tesoura</string>
+
+    <!-- Placar -->
+    <string name="jogador">Jogador</string>
+    <string name="computador">Computador</string>
+    <string name="versus">x</string>
+    <string name="info_rodadas">Rodadas: %1$d  •  Empates: %2$d</string>
+
+    <!-- Jogadas -->
+    <string name="pedra">Pedra</string>
+    <string name="papel">Papel</string>
+    <string name="tesoura">Tesoura</string>
+    <string name="escolha_sua_jogada">Escolha sua jogada:</string>
+
+    <!-- Rodada -->
+    <string name="faca_sua_jogada">Você: aguardando sua escolha</string>
+    <string name="voce_escolheu">Você: %1$s</string>
+    <string name="computador_aguardando">Computador: ?</string>
+    <string name="computador_escolheu">Computador: %1$s</string>
+    <string name="escolha_para_comecar">Escolha uma opção!</string>
+    <string name="voce_venceu">Você venceu!</string>
+    <string name="voce_perdeu">Você perdeu!</string>
+    <string name="empate">Empate!</string>
+    <string name="desc_jogada_computador">Jogada do computador</string>
+
+    <!-- Botões -->
+    <string name="nova_jogada">Nova jogada</string>
+    <string name="finalizar_jogo">Finalizar o jogo</string>
+
+    <!-- Fim de jogo -->
+    <string name="fim_de_jogo">Fim de jogo</string>
+    <string name="fim_mensagem">Placar final\nJogador: %1$d\nComputador: %2$d\nEmpates: %3$d\n\n%4$s</string>
+    <string name="fim_voce_venceu">Parabéns, você venceu o jogo!</string>
+    <string name="fim_computador_venceu">O computador venceu o jogo!</string>
+    <string name="fim_empate">O jogo terminou empatado!</string>
+    <string name="jogar_novamente">Jogar novamente</string>
+    <string name="sair">Sair</string>
+    <string name="cancelar">Cancelar</string>
+</resources>

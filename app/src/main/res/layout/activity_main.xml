@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ScrollView: garante que a tela funcione em qualquer tamanho e também na horizontal -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Conteúdo centralizado com largura máxima (fica bonito em celular e tablet) -->
+        <LinearLayout
+            android:id="@+id/conteudo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/espaco_tela"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_max="@dimen/largura_maxima_conteudo">
+
+            <!-- Título -->
+            <TextView
+                android:id="@+id/txtTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/titulo"
+                android:textColor="@color/texto_principal"
+                android:textSize="@dimen/tamanho_titulo"
+                android:textStyle="bold" />
+
+            <!-- Placar -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_cartao"
+                android:baselineAligned="false"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/jogador"
+                        android:textColor="@color/texto_secundario"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtPontosJogador"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/bg_caixa_pontos"
+                        android:gravity="center"
+                        android:minWidth="80dp"
+                        android:paddingHorizontal="12dp"
+                        android:paddingVertical="4dp"
+                        android:text="0"
+                        android:textColor="@color/texto_principal"
+                        android:textSize="@dimen/tamanho_pontos"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/versus"
+                    android:textColor="@color/texto_secundario"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/computador"
+                        android:textColor="@color/texto_secundario"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtPontosComputador"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/bg_caixa_pontos"
+                        android:gravity="center"
+                        android:minWidth="80dp"
+                        android:paddingHorizontal="12dp"
+                        android:paddingVertical="4dp"
+                        android:text="0"
+                        android:textColor="@color/texto_principal"
+                        android:textSize="@dimen/tamanho_pontos"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtInfoRodadas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/texto_secundario"
+                android:textSize="14sp"
+                tools:text="Rodadas: 0  •  Empates: 0" />
+
+            <!-- Opções do jogador -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/escolha_sua_jogada"
+                android:textColor="@color/texto_principal"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnPedra"
+                        android:layout_width="@dimen/tamanho_botao_jogada"
+                        android:layout_height="@dimen/tamanho_botao_jogada"
+                        android:background="@drawable/bg_botao_jogada"
+                        android:contentDescription="@string/pedra"
+                        android:padding="16dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_pedra" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="@string/pedra"
+                        android:textColor="@color/texto_principal"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnPapel"
+                        android:layout_width="@dimen/tamanho_botao_jogada"
+                        android:layout_height="@dimen/tamanho_botao_jogada"
+                        android:background="@drawable/bg_botao_jogada"
+                        android:contentDescription="@string/papel"
+                        android:padding="16dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_papel" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="@string/papel"
+                        android:textColor="@color/texto_principal"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnTesoura"
+                        android:layout_width="@dimen/tamanho_botao_jogada"
+                        android:layout_height="@dimen/tamanho_botao_jogada"
+                        android:background="@drawable/bg_botao_jogada"
+                        android:contentDescription="@string/tesoura"
+                        android:padding="16dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_tesoura" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="@string/tesoura"
+                        android:textColor="@color/texto_principal"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Resultado da rodada -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/bg_cartao"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/imgJogadaComputador"
+                    android:layout_width="@dimen/tamanho_icone_computador"
+                    android:layout_height="@dimen/tamanho_icone_computador"
+                    android:contentDescription="@string/desc_jogada_computador"
+                    android:src="@drawable/ic_computador" />
+
+                <TextView
+                    android:id="@+id/txtJogadaComputador"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/texto_principal"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:text="Computador: Papel" />
+
+                <TextView
+                    android:id="@+id/txtJogadaJogador"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/texto_secundario"
+                    android:textSize="16sp"
+                    tools:text="Você: Pedra" />
+
+                <TextView
+                    android:id="@+id/txtResultado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:textColor="@color/texto_principal"
+                    android:textSize="@dimen/tamanho_resultado"
+                    android:textStyle="bold"
+                    tools:text="Você perdeu!" />
+            </LinearLayout>
+
+            <!-- Ações -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnNovaJogada"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:text="@string/nova_jogada"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnFinalizar"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:text="@string/finalizar_jogo"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
