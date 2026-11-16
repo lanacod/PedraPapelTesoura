@@ -2,7 +2,6 @@
 
 **ATPS – Desenvolvimento Mobile (M2 2026)**
 **Aluna:** Lauany Pereira
-**Matrícula:** NUMERO_DA_MATRICULA
 **Professora:** Joseneuza Julita Pimenta de Aguiar
 
 Aplicativo Android desenvolvido em **Java** no **Android Studio**, onde o usuário joga Pedra, Papel e Tesoura contra o computador.
